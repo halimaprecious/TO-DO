@@ -1,5 +1,5 @@
 :root{
-    --main-orange:rgb(255, 136, 0);
+    --main-orange:rgb(240, 118, 209);
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -26,7 +26,7 @@ h1 {
 }
 .todo-input{
     border: none;
-    padding: 15px;
+    padding: 8px;
     border-radius: 20px;
     width: 100%;
 }
@@ -35,8 +35,34 @@ h1 {
 }
 #add-task-btn{
     border: none;
-    padding: 15px;
+    padding: 8px;
     border-radius: 20px;
     background-color: var(--main-orange);
     color: #fff;
+}
+.todo-list{
+list-style-type: none;
+padding: 0;
+}
+
+.todo-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+.delete-btn{
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--main-orange);
+    color: #fff;
+}
+.todo-item.completed{
+    text-decoration: line-through 2px var(--main-orange);
+    opacity: 0.7;
 }
